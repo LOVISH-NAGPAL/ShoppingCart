@@ -29,7 +29,7 @@ export default function ProductList() {
   return (
     <div className="border ">
       <button
-          className="absolute right-2 p-4 sm:p-6 sm:px-10 bg-cyan-700 rounded-full sm:rounded-2xl z-10  bottom-2 sm:bottom-auto"
+          className="fixed right-3 p-5 bg-cyan-700  rounded-full  z-10 bottom-3 "
           onClick={() => {
             navigate("/cart");
           }}>
