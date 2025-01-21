@@ -27,7 +27,7 @@ export default function ProductList() {
   }, []);
 
   return (
-    <div className="border">
+    <div className="border ">
       <button
           className="absolute right-0 p-6 px-10 bg-cyan-700"
           onClick={() => {
@@ -36,7 +36,7 @@ export default function ProductList() {
           Cart
         </button>
       <h1 className="m-3">List Of Products</h1>
-      <ul className="grid grid-cols-2">
+      <ul className="grid  grid-cols-[repeat(auto-fill,_minmax(350px,_1fr))] gap-4">
         {" "}
         {data.map((item) => {
           return (
