@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import  { useContext } from "react";
 import CartTile from "../../components/CartTile";
 import { MyContext } from "../../context";
 
@@ -9,8 +9,8 @@ export default function Cart() {
     <>
       <h1 className="p-5">Cart Products</h1>
       
-      <div className="flex w-full">
-        {cart.some(item=>item)?<ul className="bg-cyan-900 md:flex-1">
+      <div className="flex w-full flex-col lg:flex-row">
+        {cart.some(item=>item)?<ul className="bg-cyan-500 flex-1">
           {cart.map((item) => {
             return (
               <li key={item.id}>
