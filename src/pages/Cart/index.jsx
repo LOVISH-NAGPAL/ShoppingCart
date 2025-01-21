@@ -10,7 +10,7 @@ export default function Cart() {
       <h1 className="p-5">Cart Products</h1>
       
       <div className="flex w-full flex-col lg:flex-row">
-        {cart.some(item=>item)?<ul className="bg-cyan-500 flex-1">
+        {cart.some(item=>item)?<ul className="bg-cyan-900 flex-1">
           {cart.map((item) => {
             return (
               <li key={item.id}>
